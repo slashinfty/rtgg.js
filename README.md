@@ -12,7 +12,7 @@ const rtgg = new rtggClient();
 ```
 
 ## Usage
-All functions return a promise with the data it fetches. It is strongly suggested to `await` each function call (which requires the calls to be within an `async` function).
+All functions return a promise with the data it fetches. It is strongly suggested to `await` each function call (which requires the calls to be within an `async` function - see the example at the end of the readme).
 
 They each have an optional callback function parameter so data can be manipulated before returning.
 
