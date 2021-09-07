@@ -1,0 +1,26 @@
+{
+  "name": "rtgg.js",
+  "version": "1.0.0",
+  "description": "A JavaScript API wrapper for racetime.gg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashinfty/rtgg.js.git"
+  },
+  "keywords": [
+    "api",
+    "racetime"
+  ],
+  "author": "Matt Braddock",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/slashinfty/rtgg.js/issues"
+  },
+  "homepage": "https://github.com/slashinfty/rtgg.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
