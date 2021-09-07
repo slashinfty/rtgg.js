@@ -22,7 +22,10 @@ class rtggClient {
             return;
         }
         const payload = await response.json();
-        return callback(payload);
+        return payload.hasOwnProperty('leaderboards') ? callback(payload.leaderboards) :
+        payload.hasOwnProperty('races') ? callback(payload.races) :
+        payload.hasOwnProperty('results')? callback(payload.results) :
+        callback(payload);
     }
 
     async _paginatedFetch (path, limit, callback) {

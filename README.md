@@ -87,9 +87,13 @@ const rtggClient = require('rtgg.js');
 const rtgg = new rtggClient();
 
 const getLastRaceRank = async name => {
-    const userId = await rtgg.Users.get(name, data => data.results[0].id);
+    // Get the ID of the user we're searching for
+    const userId = await rtgg.Users.get(name, data => data[0].id);
+    // Get the most recent race
     const race = await rtgg.Users.getRecentRaces(userId, data => data[0], true);
+    // Find the user in the race
     const user = race.entrants.find(u => u.user.id === userId);
+    // Print the rank of the user
     console.log(user.place);
 }
 
