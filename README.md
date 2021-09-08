@@ -18,7 +18,7 @@ They each have an optional callback function parameter so data can be manipulate
 
 `rtgg.getTime()`
 
-(New feature in v1.1.0) This function is called on the client instance, and returns a date object of the server time, which is updated at each API call [more information](https://github.com/racetimeGG/racetime-app/wiki/Public-API-endpoints#the-x-exact-date-header).
+(New feature in v1.1.0) This function is called on the client instance, and returns a date object of the server time, which is updated at each API call ([more information](https://github.com/racetimeGG/racetime-app/wiki/Public-API-endpoints#the-x-exact-date-header)).
 
 ### Categories
 `slug` is the category slug (example: `ootr`).
