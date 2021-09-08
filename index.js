@@ -5,6 +5,8 @@ const Leaderboard = require('./lib/leaderboard');
 const Race = require('./lib/race');
 const User = require('./lib/user');
 
+global.Time = new Date(Date.now());
+
 class rtggClient {
     constructor() {
         this.Categories = new Category(this);
@@ -21,6 +23,7 @@ class rtggClient {
             console.log(response.statusText);
             return;
         }
+        global.Time = new Date(response.headers.get('x-date-exact'));
         const payload = await response.json();
         return payload.hasOwnProperty('leaderboards') ? callback(payload.leaderboards) :
         payload.hasOwnProperty('races') ? callback(payload.races) :
@@ -35,6 +38,7 @@ class rtggClient {
             console.log(response.statusText);
             return;
         }
+        global.Time = new Date(response.headers.get('x-date-exact'));
         const object = await response.json();
         if (limit) return callback(object.races);
         let page = 1;
@@ -47,12 +51,17 @@ class rtggClient {
                     console.log(response.statusText);
                     break;
                 }
+                global.Time = new Date(pageResponse.headers.get('x-date-exact'));
                 const pageObject = await pageResponse.json();
                 payload = payload.concat(pageObject.races);
             } else payload = object.races;
             page++;
         } while (page <= object.num_pages);
         return callback(payload);
+    }
+
+    getTime () {
+        return global.Time;
     }
 }
 

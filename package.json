@@ -1,6 +1,6 @@
 {
   "name": "rtgg.js",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A JavaScript API wrapper for racetime.gg",
   "main": "index.js",
   "scripts": {

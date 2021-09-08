@@ -12,9 +12,13 @@ const rtgg = new rtggClient();
 ```
 
 ## Usage
-All functions return a promise with the data it fetches. It is strongly suggested to `await` each function call (which requires the calls to be within an `async` function - see the example at the end of the readme).
+All functions (aside from the time function below) return a promise with the data it fetches. It is strongly suggested to `await` each function call (which requires the calls to be within an `async` function - see the example at the end of the readme).
 
 They each have an optional callback function parameter so data can be manipulated before returning.
+
+`rtgg.getTime()`
+
+(New feature in v1.1.0) This function is called on the client instance, and returns a date object of the server time, which is updated at each API call [more information](https://github.com/racetimeGG/racetime-app/wiki/Public-API-endpoints#the-x-exact-date-header).
 
 ### Categories
 `slug` is the category slug (example: `ootr`).
