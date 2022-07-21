@@ -1,4 +1,4 @@
-# Class: rtgg
+# Class: rtggClient
 
 Class representing the API wrapper
 
@@ -6,29 +6,29 @@ Class representing the API wrapper
 
 ### Constructors
 
-- [constructor](rtgg.md#constructor)
+- [constructor](rtggClient.md#constructor)
 
 ### Methods
 
-- [categoryDetails](rtgg.md#categorydetails)
-- [categoryLeaderboards](rtgg.md#categoryleaderboards)
-- [categoryRaces](rtgg.md#categoryraces)
-- [raceDetails](rtgg.md#racedetails)
-- [races](rtgg.md#races)
-- [userRaces](rtgg.md#userraces)
-- [userSearch](rtgg.md#usersearch)
+- [categoryDetails](rtggClient.md#categorydetails)
+- [categoryLeaderboards](rtggClient.md#categoryleaderboards)
+- [categoryRaces](rtggClient.md#categoryraces)
+- [raceDetails](rtggClient.md#racedetails)
+- [races](rtggClient.md#races)
+- [userRaces](rtggClient.md#userraces)
+- [userSearch](rtggClient.md#usersearch)
 
 ## Constructors
 
 ### constructor
 
-• **new rtgg**()
+• **new rtggClient**()
 
 Creates an API wrapper
 
 #### Defined in
 
-index.ts:16
+Client.ts:16
 
 ## Methods
 
@@ -52,7 +52,7 @@ An object representing the [category details](https://github.com/racetimeGG/race
 
 #### Defined in
 
-index.ts:49
+Client.ts:49
 
 ___
 
@@ -76,7 +76,7 @@ An array of objects representing the [leaderboards](https://github.com/racetimeG
 
 #### Defined in
 
-index.ts:70
+Client.ts:70
 
 ___
 
@@ -101,7 +101,7 @@ An array of objects representing the [races](https://github.com/racetimeGG/racet
 
 #### Defined in
 
-index.ts:60
+Client.ts:60
 
 ___
 
@@ -126,7 +126,7 @@ An object representing the [race](https://github.com/racetimeGG/racetime-app/wik
 
 #### Defined in
 
-index.ts:90
+Client.ts:90
 
 ___
 
@@ -144,7 +144,7 @@ An array of objects representing the open and ongoing [races](https://github.com
 
 #### Defined in
 
-index.ts:79
+Client.ts:79
 
 ___
 
@@ -169,7 +169,7 @@ An array of objects representing the [races](https://github.com/racetimeGG/racet
 
 #### Defined in
 
-index.ts:112
+Client.ts:112
 
 ___
 
@@ -194,4 +194,4 @@ An array of matched [users](https://github.com/racetimeGG/racetime-app/wiki/Publ
 
 #### Defined in
 
-index.ts:101
+Client.ts:101

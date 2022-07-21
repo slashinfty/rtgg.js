@@ -105,4 +105,4 @@ dist
 
 # User added files
 package-lock.json
-docs/
+typedocs/
