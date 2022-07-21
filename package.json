@@ -1,9 +1,18 @@
 {
   "name": "rtgg.js",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A JavaScript API wrapper for racetime.gg",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=17.5"
+  },
   "scripts": {
+    "build": "rm -rf dist/* && tsc -p tsconfig.json",
+    "docs": "rm -rf docs/* && typedoc --plugin typedoc-plugin-markdown --out docs/ --hideBreadcrumbs true --excludePrivate true src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +29,10 @@
     "url": "https://github.com/slashinfty/rtgg.js/issues"
   },
   "homepage": "https://github.com/slashinfty/rtgg.js#readme",
-  "dependencies": {
-    "node-fetch": "^2.6.1"
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "typedoc": "^0.23.8",
+    "typedoc-plugin-markdown": "^3.13.4",
+    "typescript": "^4.7.4"
   }
 }
