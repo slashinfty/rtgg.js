@@ -1,6 +1,6 @@
 {
   "name": "rtgg.js",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A JavaScript API wrapper and WebSocket handler for racetime.gg",
   "main": "./dist/index.js",
   "files": [
