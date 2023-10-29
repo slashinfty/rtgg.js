@@ -19,3 +19,7 @@ const rtgg = new rtggClient();
 The wrapper is based on [promises](https://nodejs.dev/learn/understanding-javascript-promises), so it advised you use [`async`/`await`](https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await) in all API calls.
 
 Documentation is available [here](docs/modules.md).
+
+## Discussion
+
+You can discuss this repository more in my [Discord](https://discord.gg/Q8t9gcZ77s).
